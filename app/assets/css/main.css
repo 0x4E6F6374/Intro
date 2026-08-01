@@ -224,6 +224,7 @@ body {
     mask-composite: exclude;
     opacity: 0.3;
     transition: opacity 0.3s ease;
+    pointer-events: none;
 }
 
 .tech-border-gradient:hover::before {
