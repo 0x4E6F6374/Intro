@@ -3,8 +3,8 @@
 export default defineAppConfig({
   profile: {
     // ============ 基础信息 ============
-    name: 'Noct',
-    fullName: 'Noct',
+    name: '无名',
+    fullName: '无名',
     title: '全栈开发工程师 / 开源爱好者',
     tagline: '用代码构建世界，用开源连接彼此',
     avatar: '/static/avatar.svg',
