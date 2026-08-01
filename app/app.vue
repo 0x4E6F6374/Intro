@@ -363,6 +363,19 @@
               >
                 {{ profile.contact.secondaryAction.label }}
               </UButton>
+              <UButton
+                v-if="profile.contact.tertiaryAction"
+                :to="profile.contact.tertiaryAction.to"
+                size="xl"
+                color="neutral"
+                variant="subtle"
+              >
+                <template #leading>
+                  <img v-if="isImageIcon(profile.contact.tertiaryAction.icon)" :src="profile.contact.tertiaryAction.icon" :alt="profile.contact.tertiaryAction.label" class="w-5 h-5">
+                  <UIcon v-else :name="profile.contact.tertiaryAction.icon" class="w-5 h-5" />
+                </template>
+                {{ profile.contact.tertiaryAction.label }}
+              </UButton>
             </div>
           </div>
         </section>
@@ -411,6 +424,9 @@
 <script setup lang="ts">
 const appConfig = useAppConfig()
 const profile = computed(() => appConfig.profile)
+
+// 判断图标是本地图片路径（/开头或 http）还是 Iconify 图标名
+const isImageIcon = (icon: string) => icon && (icon.startsWith('/') || icon.startsWith('http'))
 
 // 顶部导航项（从配置派生，不硬编码）
 const navItems = computed(() => [
