@@ -14,11 +14,14 @@
           <span class="text-2xl font-bold tech-gradient-text">{{ profile.name }}</span>
         </NuxtLink>
       </template>
+
+      <!-- 桌面端水平导航 -->
       <UNavigationMenu
         :items="navItems"
         variant="link"
         highlight
       />
+
       <template #right>
         <UButton
           :to="profile.email ? `mailto:${profile.email}` : '#'"
@@ -30,6 +33,15 @@
         >
           联系我
         </UButton>
+      </template>
+
+      <!-- 移动端抽屉菜单 -->
+      <template #body>
+        <UNavigationMenu
+          :items="navItems"
+          orientation="vertical"
+          class="-mx-2.5"
+        />
       </template>
     </UHeader>
 
