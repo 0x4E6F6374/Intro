@@ -265,13 +265,16 @@
               v-for="item in profile.social.items"
               :key="item.label"
               :to="item.to"
-              :icon="item.icon"
               :aria-label="item.label"
               size="xl"
               color="neutral"
               variant="outline"
               class="tech-glass tech-glow-button"
             >
+              <template #leading>
+                <img v-if="item.image" :src="item.image" :alt="item.label" class="w-5 h-5">
+                <UIcon v-else :name="item.icon" class="w-5 h-5" />
+              </template>
               {{ item.label }}
             </UButton>
           </div>

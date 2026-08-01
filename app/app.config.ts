@@ -223,13 +223,8 @@ export default defineAppConfig({
           icon: 'i-lucide-camera'
         },
         {
-          name: '旅行',
-          description: '用脚步丈量城市，在不同风土里收集故事。',
-          icon: 'i-lucide-plane'
-        },
-        {
           name: '游戏',
-          description: '独立游戏爱好者，沉迷机制设计与叙事的巧妙结合。',
+          description: 'Minecraft重度爱好者，离了这玩意我活不了啊啊啊',
           icon: 'i-lucide-gamepad-2'
         },
         {
@@ -247,6 +242,8 @@ export default defineAppConfig({
       items: [
         { label: 'GitHub', icon: 'i-simple-icons-github', to: 'https://github.com/0x4E6F6374' },
         { label: 'Email', icon: 'i-lucide-mail', to: 'mailto:comierate@gmail.com' },
+        { label: 'Bilibili', image: '/static/social/bilibili.svg', to: 'https://b23.tv/MBnMgcZ' },
+        { label: '抖音', image: '/static/social/douyin.svg', to: 'https://v.douyin.com/K9YfQEHLUyo/' }
       ]
     },
 
