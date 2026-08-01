@@ -9,19 +9,19 @@ export default defineAppConfig({
     // ============ 基础信息 ============
     name: '无名',
     fullName: '无名',
-    title: '全栈开发工程师 / 开源爱好者',
+    title: '大一学生 / 开源爱好者 / 开发工程师 / 网络安全爱好者 / 项目负责人',
     tagline: '用代码构建世界，用开源连接彼此',
     avatar,
     location: '中国',
     status: '可接受合作',
-    email: 'contact@example.com',
+    email: 'comierate@gmail.com',
 
     // ============ Hero 主视觉区 ============
     hero: {
       eyebrow: 'Hello World',
       title: '我是 无名',
-      highlight: '全栈开发工程师',
-      description: '专注于 Web 全栈开发与开源技术，热爱用代码解决问题，追求优雅的工程实现。这里记录了我的技术栈、项目作品与成长经历。',
+      highlight: '一个爱好计算机相关技术的学生',
+      description: '专注于 Web 开发与开源技术、网络安全，热爱用代码解决问题，追求优雅的工程实现。这里记录了我的技术栈、项目作品与成长经历。',
       primaryAction: {
         label: '查看项目作品',
         to: '#projects',
@@ -34,8 +34,8 @@ export default defineAppConfig({
       },
       stats: [
         { label: '开发年限', value: '3+', icon: 'i-lucide-clock' },
-        { label: '完成项目', value: '30+', icon: 'i-lucide-folder-check' },
-        { label: '开源贡献', value: '100+', icon: 'i-lucide-git-pull-request' }
+        { label: '完成项目', value: '3+', icon: 'i-lucide-folder-check' },
+        { label: '开源贡献', value: '20+', icon: 'i-lucide-git-pull-request' }
       ]
     },
 
@@ -49,11 +49,6 @@ export default defineAppConfig({
           title: '工程化思维',
           description: '注重代码质量与架构设计，遵循 SOLID 原则与设计模式。',
           icon: 'i-lucide-blocks'
-        },
-        {
-          title: '全栈能力',
-          description: '覆盖前端、后端、数据库、部署运维的完整技术链路。',
-          icon: 'i-lucide-layers'
         },
         {
           title: '持续学习',
@@ -88,7 +83,7 @@ export default defineAppConfig({
           icon: 'i-lucide-server',
           skills: [
             { name: 'Node.js', level: 88 },
-            { name: 'Java / Spring Boot', level: 85 },
+            { name: 'Java / Spring Boot', level: 90 },
             { name: 'Go', level: 75 },
             { name: 'Python', level: 78 }
           ]
@@ -100,7 +95,7 @@ export default defineAppConfig({
             { name: 'MySQL', level: 88 },
             { name: 'PostgreSQL', level: 82 },
             { name: 'Redis', level: 85 },
-            { name: 'MongoDB', level: 75 }
+            { name: 'MongoDB', level: 20 }
           ]
         },
         {
@@ -137,34 +132,6 @@ export default defineAppConfig({
           icon: 'i-lucide-user-circle',
           featured: true
         },
-        {
-          name: '自动化部署平台',
-          description: '基于 Docker 的容器化部署平台，支持一键构建、灰度发布与回滚。',
-          tags: ['Docker', 'Go', 'CI/CD'],
-          link: '#',
-          icon: 'i-lucide-ship'
-        },
-        {
-          name: '实时聊天系统',
-          description: '基于 WebSocket 的高性能实时通讯系统，支持群聊、私聊与消息推送。',
-          tags: ['WebSocket', 'Node.js', 'Redis'],
-          link: '#',
-          icon: 'i-lucide-message-circle'
-        },
-        {
-          name: '数据分析看板',
-          description: '可视化数据监控平台，支持多数据源接入与自定义图表配置。',
-          tags: ['Vue', 'ECharts', 'PostgreSQL'],
-          link: '#',
-          icon: 'i-lucide-bar-chart-3'
-        },
-        {
-          name: 'API 网关',
-          description: '轻量级 API 网关服务，支持路由、鉴权、限流与日志聚合。',
-          tags: ['Go', 'Kong', 'gRPC'],
-          link: '#',
-          icon: 'i-lucide-network'
-        }
       ]
     },
 
@@ -175,15 +142,8 @@ export default defineAppConfig({
       items: [
         {
           date: '2026 - 至今',
-          title: '全栈架构师',
-          description: '负责核心系统架构设计与技术团队管理，主导多个大型项目的落地。',
-          icon: 'i-lucide-award',
-          tag: '当前'
-        },
-        {
-          date: '2024 - 2025',
-          title: '高级全栈工程师',
-          description: '深耕 Web 全栈开发，主导用户中心、部署平台等核心产品研发。',
+          title: '初入网络安全',
+          description: '开始学习网络安全，关注安全事件，参与安全社区。',
           icon: 'i-lucide-briefcase'
         },
         {
@@ -264,6 +224,11 @@ export default defineAppConfig({
         label: '查看 GitHub',
         to: 'https://github.com/0x4E6F6374',
         icon: 'i-simple-icons-github'
+      },
+      tertiaryAction: {
+        label: '添加 QQ',
+        to: 'http://wpa.qq.com/msgrd?v=3&uin=3750620867&site=qq&menu=yes',
+        icon: '/static/social/qq.svg'
       }
     },
 
