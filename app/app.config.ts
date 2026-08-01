@@ -59,6 +59,16 @@ export default defineAppConfig({
           title: '开源精神',
           description: '积极回馈社区，参与开源项目协作与知识分享。',
           icon: 'i-lucide-git-branch'
+        },
+        {
+          title: '网络安全',
+          description: '关注网络安全，参与安全项目与研究。',
+          icon: 'i-lucide-lock'
+        },
+        {
+          title: 'Furry控',
+          description: '重度Furry控，自24年入圈.',
+          icon: 'i-famicons:paw'
         }
       ]
     },
@@ -130,6 +140,14 @@ export default defineAppConfig({
           tags: ['Nuxt', 'Vue', 'TypeScript', 'Nuxt UI'],
           link: '#',
           icon: 'i-lucide-user-circle',
+          featured: true
+        },
+        {
+          name: 'Aeracraft',
+          description: '自己开的Minecraft服务器，需要正版账户，立志成为Hypixel这样的服务器！！',
+          tags: ['Minecraft', 'Java',],
+          link: '#',
+          icon: 'i-material-icon-theme:minecraft',
           featured: true
         },
       ]
