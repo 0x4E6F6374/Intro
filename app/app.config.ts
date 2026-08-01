@@ -181,22 +181,61 @@ export default defineAppConfig({
           tag: '当前'
         },
         {
-          date: '2023 - 2026',
+          date: '2024 - 2025',
           title: '高级全栈工程师',
           description: '深耕 Web 全栈开发，主导用户中心、部署平台等核心产品研发。',
           icon: 'i-lucide-briefcase'
         },
         {
-          date: '2021 - 2023',
-          title: '后端开发工程师',
-          description: '专注后端服务开发，深入实践微服务架构与高并发系统设计。',
+          date: '2023 - 2024',
+          title: '稍有经验',
+          description: '自行学习了进阶的前端框架，以及初步去接触C++.',
           icon: 'i-lucide-code-2'
         },
         {
-          date: '2020 - 2021',
-          title: '前端开发工程师',
-          description: '开启职业生涯，专注于现代前端框架与工程化体系建设。',
+          date: '2019 - 2023',
+          title: '编程入门',
+          description: '从基础开始，学习了 Vue、Nuxt、TypeScript 等前端框架，以及 Python、Java、Go 等后端技术.',
           icon: 'i-lucide-sparkles'
+        }
+      ]
+    },
+
+    // ============ 兴趣爱好（非编程，让人物更立体） ============
+    hobbies: {
+      title: '兴趣爱好',
+      subtitle: 'Hobbies',
+      description: '代码之外，这些是我生活里的能量来源。',
+      items: [
+        {
+          name: '阅读',
+          description: '偏爱科幻与历史，享受在文字里穿越时空的感觉。',
+          icon: 'i-lucide-book-open'
+        },
+        {
+          name: '音乐',
+          description: '听电子与后摇居多，写代码时常有 BGM 陪伴。',
+          icon: 'i-lucide-music'
+        },
+        {
+          name: '摄影',
+          description: '喜欢记录街角与光影，镜头是观察世界的另一只眼。',
+          icon: 'i-lucide-camera'
+        },
+        {
+          name: '旅行',
+          description: '用脚步丈量城市，在不同风土里收集故事。',
+          icon: 'i-lucide-plane'
+        },
+        {
+          name: '游戏',
+          description: '独立游戏爱好者，沉迷机制设计与叙事的巧妙结合。',
+          icon: 'i-lucide-gamepad-2'
+        },
+        {
+          name: '咖啡',
+          description: '手冲爱好者，享受清晨磨豆与注水的仪式感。',
+          icon: 'i-lucide-coffee'
         }
       ]
     },
@@ -207,9 +246,7 @@ export default defineAppConfig({
       subtitle: 'Follow Me',
       items: [
         { label: 'GitHub', icon: 'i-simple-icons-github', to: 'https://github.com/0x4E6F6374' },
-        { label: 'Email', icon: 'i-lucide-mail', to: 'mailto:contact@example.com' },
-        { label: 'Twitter', icon: 'i-simple-icons-x', to: '#' },
-        { label: 'Discord', icon: 'i-simple-icons-discord', to: '#' }
+        { label: 'Email', icon: 'i-lucide-mail', to: 'mailto:comierate@gmail.com' },
       ]
     },
 
@@ -223,7 +260,7 @@ export default defineAppConfig({
       description: '有合作意向或技术交流需求？欢迎通过以下方式联系我，期待与你的交流。',
       primaryAction: {
         label: '发送邮件',
-        to: 'mailto:contact@example.com',
+        to: 'mailto:comierate@gmail.com',   
         icon: 'i-lucide-send'
       },
       secondaryAction: {
@@ -235,7 +272,7 @@ export default defineAppConfig({
 
     // ============ 页脚 ============
     footer: {
-      copyright: `© ${new Date().getFullYear()} Noct. 保留所有权利。`,
+      copyright: `© ${new Date().getFullYear()} 无名. 保留所有权利。`,
       builtWith: '使用 Nuxt UI 与 TypeScript 构建',
       // 备案信息
       filings: [

@@ -228,6 +228,30 @@
           </div>
         </section>
 
+        <!-- ============ 兴趣爱好 ============ -->
+        <section id="hobbies" class="py-20 scroll-mt-20">
+          <div class="text-center mb-12">
+            <UBadge :label="profile.hobbies.subtitle" color="primary" variant="soft" class="mb-3" />
+            <h2 class="text-4xl md:text-5xl font-bold mb-4">
+              {{ profile.hobbies.title }}
+            </h2>
+            <p class="max-w-2xl mx-auto text-lg text-slate-400 leading-relaxed">
+              {{ profile.hobbies.description }}
+            </p>
+          </div>
+          <UPageGrid>
+            <UPageCard
+              v-for="item in profile.hobbies.items"
+              :key="item.name"
+              :title="item.name"
+              :description="item.description"
+              :icon="item.icon"
+              class="tech-glass"
+              spotlight
+            />
+          </UPageGrid>
+        </section>
+
         <!-- ============ 社交链接 ============ -->
         <section id="social" class="py-20 scroll-mt-20">
           <div class="text-center mb-12">
@@ -379,6 +403,7 @@ const navItems = computed(() => [
   { label: '技能', to: '#skills', icon: 'i-lucide-cpu' },
   { label: '项目', to: '#projects', icon: 'i-lucide-folder-git-2' },
   { label: '经历', to: '#timeline', icon: 'i-lucide-history' },
+  { label: '兴趣', to: '#hobbies', icon: 'i-lucide-heart' },
   { label: '友链', to: '#links', icon: 'i-lucide-link' },
   { label: '联系', to: '#contact', icon: 'i-lucide-mail' }
 ])
