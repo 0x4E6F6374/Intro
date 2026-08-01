@@ -46,7 +46,7 @@ export default defineNuxtConfig({
 
   app: {
     head: {
-      title: 'Noct - 个人介绍',
+      title: '无名 - 个人介绍',
       htmlAttrs: {
         lang: 'zh-CN',
         class: 'dark'
@@ -54,7 +54,7 @@ export default defineNuxtConfig({
       meta: [
         { charset: 'utf-8' },
         { name: 'viewport', content: 'width=device-width, initial-scale=1' },
-        { name: 'description', content: 'Noct 的个人介绍页 - 全栈开发工程师 / 开源爱好者' },
+        { name: 'description', content: '无名 的个人介绍页 - 学生 / 开源爱好者' },
         { name: 'theme-color', content: '#070b14' }
       ]
     }
