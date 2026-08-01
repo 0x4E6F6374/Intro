@@ -297,11 +297,35 @@
       <template #left>
         <p class="text-sm text-slate-500">{{ profile.footer.copyright }}</p>
       </template>
+
       <template #right>
         <p class="text-sm text-slate-500 flex items-center gap-1">
           <UIcon name="i-lucide-heart" class="text-pink-500" />
           {{ profile.footer.builtWith }}
         </p>
+      </template>
+
+      <!-- 备案信息：底部全宽行 -->
+      <template #bottom>
+        <div class="flex flex-wrap items-center justify-center gap-x-4 gap-y-1 pb-2">
+          <a
+            v-for="filing in profile.footer.filings"
+            :key="filing.label"
+            :href="filing.to"
+            target="_blank"
+            rel="nofollow"
+            class="inline-flex items-center text-xs text-slate-500 hover:text-primary transition-colors"
+          >
+            <img
+              :src="filing.icon"
+              :alt="filing.label"
+              width="20"
+              height="20"
+              class="align-middle mr-1"
+            >
+            {{ filing.label }}
+          </a>
+        </div>
       </template>
     </UFooter>
   </UApp>

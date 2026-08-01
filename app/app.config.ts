@@ -229,7 +229,20 @@ export default defineAppConfig({
     // ============ 页脚 ============
     footer: {
       copyright: `© ${new Date().getFullYear()} Noct. 保留所有权利。`,
-      builtWith: '使用 Nuxt UI 与 TypeScript 构建'
+      builtWith: '使用 Nuxt UI 与 TypeScript 构建',
+      // 备案信息
+      filings: [
+        {
+          label: '吉ICP备2026006928号-1',
+          to: 'https://beian.miit.gov.cn/',
+          icon: '/static/beian/icp.png'
+        },
+        {
+          label: '吉公网安备22240302000220号',
+          to: 'https://www.beian.gov.cn/portal/registerSystemInfo?recordcode=22240302000220',
+          icon: '/static/beian/gongan.png'
+        }
+      ]
     }
   }
 })
