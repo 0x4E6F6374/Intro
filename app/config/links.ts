@@ -8,7 +8,7 @@ export default {
       name: 'Noct\'s Blog',
       url: 'https://blog.0xnm.cn',
       description: '个人技术博客，记录开发与思考。',
-      avatar: 'https://blog.0xnm.cn/statics/icon/beian/icp.png'
+      avatar: 'https://blog.0xnm.cn/wp-content/uploads/2026/07/1bb87d41d120260730194557.png'
     },
     {
       name: 'GitHub',

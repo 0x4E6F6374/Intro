@@ -19,7 +19,7 @@ export default defineAppConfig({
     // ============ Hero 主视觉区 ============
     hero: {
       eyebrow: 'Hello World',
-      title: '我是 Noct',
+      title: '我是 无名',
       highlight: '全栈开发工程师',
       description: '专注于 Web 全栈开发与开源技术，热爱用代码解决问题，追求优雅的工程实现。这里记录了我的技术栈、项目作品与成长经历。',
       primaryAction: {
@@ -33,7 +33,7 @@ export default defineAppConfig({
         icon: 'i-lucide-mail'
       },
       stats: [
-        { label: '开发年限', value: '5+', icon: 'i-lucide-clock' },
+        { label: '开发年限', value: '3+', icon: 'i-lucide-clock' },
         { label: '完成项目', value: '30+', icon: 'i-lucide-folder-check' },
         { label: '开源贡献', value: '100+', icon: 'i-lucide-git-pull-request' }
       ]
