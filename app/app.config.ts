@@ -21,7 +21,7 @@ export default defineAppConfig({
       eyebrow: 'Hello World',
       title: '我是 无名',
       highlight: '一个爱好计算机相关技术的学生',
-      description: '专注于 Web 开发与开源技术、网络安全，热爱用代码解决问题，追求优雅的工程实现。这里记录了我的技术栈、项目作品与成长经历。',
+      description: '我专注于计算机相关技术，热爱用代码解决问题，以及玩Minecraft的学生，这里记录了我的技术栈、项目作品与成长经历。',
       primaryAction: {
         label: '查看项目作品',
         to: '#projects',
