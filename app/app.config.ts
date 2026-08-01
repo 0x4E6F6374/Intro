@@ -127,10 +127,10 @@ export default defineAppConfig({
       subtitle: 'Projects',
       items: [
         {
-          name: 'UserCenter 用户中心',
+          name: 'AeraUsers',
           description: '面向 Minecraft 服务器的用户中心系统，集成账号管理、白名单、权限控制，基于 Spring Boot + Redis + MySQL 构建。',
           tags: ['Spring Boot', 'Redis', 'MySQL', 'SaToken'],
-          link: '#',
+          link: 'https://user.aeracraft.com/',
           icon: 'i-lucide-users',
           featured: true
         },
@@ -138,7 +138,7 @@ export default defineAppConfig({
           name: '个人介绍页',
           description: '基于 Nuxt UI 构建的炫酷个人主页，配置化驱动，支持暗色科技感主题。',
           tags: ['Nuxt', 'Vue', 'TypeScript', 'Nuxt UI'],
-          link: '#',
+          link: 'https://0xnm.cn/',
           icon: 'i-lucide-user-circle',
           featured: true
         },
@@ -146,7 +146,7 @@ export default defineAppConfig({
           name: 'Aeracraft',
           description: '自己开的Minecraft服务器，需要正版账户，立志成为Hypixel这样的服务器！！',
           tags: ['Minecraft', 'Java',],
-          link: '#',
+          link: 'https://aeracraft.com/',
           icon: 'i-material-icon-theme:minecraft',
           featured: true
         },
