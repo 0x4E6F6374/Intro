@@ -1,5 +1,9 @@
 // 个人介绍页配置文件
 // 所有展示文字内容均在此文件配置，便于随时修改，无需改动组件代码
+// 头像与友情链接已拆分到独立文件，便于单独维护：
+import avatar from './config/avatar'
+import links from './config/links'
+
 export default defineAppConfig({
   profile: {
     // ============ 基础信息 ============
@@ -7,7 +11,7 @@ export default defineAppConfig({
     fullName: '无名',
     title: '全栈开发工程师 / 开源爱好者',
     tagline: '用代码构建世界，用开源连接彼此',
-    avatar: '/static/avatar.svg',
+    avatar,
     location: '中国',
     status: '可接受合作',
     email: 'contact@example.com',
@@ -208,6 +212,9 @@ export default defineAppConfig({
         { label: 'Discord', icon: 'i-simple-icons-discord', to: '#' }
       ]
     },
+
+    // ============ 友情链接（独立配置文件 app/config/links.ts） ============
+    links,
 
     // ============ 联系方式 ============
     contact: {

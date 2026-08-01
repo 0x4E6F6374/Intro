@@ -46,8 +46,8 @@
               class="tech-pulse"
             />
             <UAvatar
-              :src="profile.avatar"
-              :alt="profile.name"
+              :src="profile.avatar.src"
+              :alt="profile.avatar.alt"
               size="3xl"
               class="ring-2 ring-primary/50 shadow-[0_0_60px_rgba(56,189,248,0.4)]"
             />
@@ -253,6 +253,44 @@
           </div>
         </section>
 
+        <!-- ============ 友情链接 ============ -->
+        <section id="links" class="py-20 scroll-mt-20">
+          <div class="text-center mb-12">
+            <UBadge :label="profile.links.subtitle" color="primary" variant="soft" class="mb-3" />
+            <h2 class="text-4xl md:text-5xl font-bold mb-4">
+              {{ profile.links.title }}
+            </h2>
+          </div>
+          <UPageGrid>
+            <UPageCard
+              v-for="item in profile.links.items"
+              :key="item.name"
+              :to="item.url"
+              target="_blank"
+              class="tech-glass group"
+            >
+              <template #title>
+                <div class="flex items-center gap-3">
+                  <UAvatar
+                    :src="item.avatar"
+                    :alt="item.name"
+                    size="md"
+                    class="ring-1 ring-primary/30"
+                  />
+                  <span>{{ item.name }}</span>
+                </div>
+              </template>
+              <p class="text-sm text-slate-400 leading-relaxed">{{ item.description }}</p>
+              <template #footer>
+                <div class="flex items-center gap-1 text-xs text-primary-400">
+                  <UIcon name="i-lucide-external-link" />
+                  <span class="truncate">{{ item.url }}</span>
+                </div>
+              </template>
+            </UPageCard>
+          </UPageGrid>
+        </section>
+
         <!-- ============ 联系方式 CTA ============ -->
         <section id="contact" class="py-20 scroll-mt-20">
           <div class="tech-border-gradient p-8 md:p-14 text-center relative overflow-hidden">
@@ -341,6 +379,7 @@ const navItems = computed(() => [
   { label: '技能', to: '#skills', icon: 'i-lucide-cpu' },
   { label: '项目', to: '#projects', icon: 'i-lucide-folder-git-2' },
   { label: '经历', to: '#timeline', icon: 'i-lucide-history' },
+  { label: '友链', to: '#links', icon: 'i-lucide-link' },
   { label: '联系', to: '#contact', icon: 'i-lucide-mail' }
 ])
 </script>
